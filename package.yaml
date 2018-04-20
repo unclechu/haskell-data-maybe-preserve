@@ -26,4 +26,3 @@ tests:
     dependencies:
       - data-maybe-preserve
       - hspec
-
