@@ -1,0 +1,49 @@
+-- This file has been generated from package.yaml by hpack version 0.20.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 83b64bf35b4f5fd8009ea7874e56d67938bf4655302ed31d726e12b72a900e61
+
+name:           data-maybe-preserve
+version:        0.0.0
+synopsis:       "Preserve" Maybe helpers
+category:       System
+homepage:       https://github.com/unclechu/haskell-data-maybe-preserve#readme
+bug-reports:    https://github.com/unclechu/haskell-data-maybe-preserve/issues
+author:         Viacheslav Lotsmanov
+maintainer:     <lotsmanov89@gmail.com>
+copyright:      2018 Viacheslav Lotsmanov
+license:        MIT
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+
+source-repository head
+  type: git
+  location: https://github.com/unclechu/haskell-data-maybe-preserve
+
+library
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Werror
+  build-depends:
+      base
+  exposed-modules:
+      Data.Maybe.Preserve
+  other-modules:
+      Paths_data_maybe_preserve
+  default-language: Haskell2010
+
+test-suite data-maybe-preserve-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  hs-source-dirs:
+      test
+  ghc-options: -Wall -Werror
+  build-depends:
+      base
+    , data-maybe-preserve
+    , hspec
+  other-modules:
+      Paths_data_maybe_preserve
+  default-language: Haskell2010

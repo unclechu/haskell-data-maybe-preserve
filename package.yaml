@@ -1,0 +1,29 @@
+name:         data-maybe-preserve
+version:      0.0.0
+synopsis:     '"Preserve" Maybe helpers'
+license:      MIT
+license-file: LICENSE
+author:       Viacheslav Lotsmanov
+maintainer:   <lotsmanov89@gmail.com>
+copyright:    2018 Viacheslav Lotsmanov
+category:     System
+github:       unclechu/haskell-data-maybe-preserve
+
+dependencies:
+  - base
+
+ghc-options:
+  - -Wall
+  - -Werror
+
+library:
+  source-dirs: src
+
+tests:
+  data-maybe-preserve-test:
+    source-dirs: test
+    main: Spec.hs
+    dependencies:
+      - data-maybe-preserve
+      - hspec
+
